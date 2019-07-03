@@ -33,7 +33,7 @@ li {
   text-indent: -9999px;
   display: block;
   position: absolute;
-  border: 2px solid gray;
+  border: 2px solid green;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -52,7 +52,10 @@ li span {
 li#sun {
   width: 40px;
   height: 40px;
-  background: red;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: yellow;
   top: 302px;
   left: 462px;
   border: none;
@@ -73,7 +76,7 @@ li#mercury {
 }
 
 li#mercury span {
-  background: red;
+  background: #808080;
   top: 10px;
   left: 10px;
 }
@@ -87,7 +90,7 @@ li#venus {
 }
 
 li#venus span {
-  background: red;
+  background: #FFFF33;
   top: 118px;
   left: 5px;
 }
@@ -101,7 +104,7 @@ li#earth {
 }
 
 li#earth span {
-  background: red;
+  background: blue;
   top: 56px;
   left: 5px;
 }
@@ -109,7 +112,7 @@ li#earth span {
 li#earth span#moon {
   width: 4px;
   height: 4px;
-  background: red;
+  background: white;
   top: 12px;
   left: 12px;
 }
@@ -123,7 +126,7 @@ li#mars {
 }
 
 li#mars span {
-  background: red;
+  background: #A0522D;
   top: 0px;
   left: 175px;
 }
@@ -137,7 +140,7 @@ li#jupiter {
 }
 
 li#jupiter span {
-  background: red;
+  background: orange;
   top: 67px;
   left: 24px;
 }
@@ -151,7 +154,7 @@ li#saturn {
 }
 
 li#saturn span {
-  background: red;
+  background: #CFB53B;
   top: 24px;
   left: 300px;
 }
@@ -163,7 +166,7 @@ li#saturn span#rings {
   -moz-border-radius: 75%;
   border-radius: 75%;
   background: none;
-  border: 2px solid red;
+  border: 2px solid tan;
   left: -3px;
   top: -3px;
   -webkit-transform: skewY(50deg);
@@ -181,7 +184,7 @@ li#uranus {
 }
 
 li#uranus span {
-  background: red;
+  background: #afeeee;
   top: 7px;
   left: 300px;
 }
@@ -195,7 +198,7 @@ li#neptune {
 }
 
 li#neptune span {
-  background: red;
+  background: #9400D3;
   top: 0px;
   left: 200px;
 }
@@ -207,55 +210,58 @@ li#pluto {
   left: 190px;
   z-index: 91;
 }
+
 li#pluto span {
-  background: red;
+  background: brown;
   top: 79px;
   left: 79px;
 }
 
 li,
 li#earth span {
-  animation: rotate linear infinite;
+    animation: linear rotate 12s infinite
 }
 
 li#mercury {
-  animation-duration: 5s;
+  animation: linear rotate 5s infinite
 }
 
 li#venus {
-  animation-duration: 8s;
+    animation: linear rotate 8s infinite
 }
 
 li#earth {
-  animation-duration: 12s;
+    animation: linear rotate 12s infinite
 }
 
 li#earth span {
-  animation-duration: 2s;
+  animation: linear rotate 2s infinite 
 }
 
 li#mars {
-  animation-duration: 20s;
+    animation: linear rotate 20s infinite
 }
 
 li#jupiter {
-  animation-duration: 30s;
+    animation: linear rotate 30s infinite
 }
 
 li#saturn {
-  animation-duration: 60s;
+    animation: linear rotate 60s infinite
 }
 
 li#uranus {
-  animation-duration: 70s;
+      animation: linear rotate 70s infinite
 }
 
 li#neptune {
-  animation-duration: 100s;
+      animation: linear rotate 100s infinite
+
 }
 
 li#pluto {
-  animation-duration: 120s;
+      animation: linear rotate 120s infinite
+
 }
 
 @keyframes rotate {
